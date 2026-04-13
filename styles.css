@@ -1,0 +1,194 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.topbar {
+    font-family: Inter, system-ui, sans-serif;
+    font-size: 14px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 64px;
+    padding: 0 24px;
+
+    background: #ffffff;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.left, .right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.back {
+    display: flex;
+    align-items: center;
+    color: #6b7280;
+}
+
+.posts {
+    font-weight: 500;
+    color: #444;
+}
+
+.status {
+    color: #9aa0a6;
+}
+
+.nav-button {
+    padding: 8px 12px;
+    border-radius: 8px;
+
+    cursor: pointer;
+    color: #444;
+}
+
+.nav-button:hover {
+    background: #f2f2f2;
+}
+
+.publish-button {
+    color: #16a34a;
+    font-weight: 500;
+}
+
+.menu-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.posts-button {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    padding: 8px 12px;
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+.outline-button {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    padding: 0px 0px 12px 0px;
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+.outline-button.closed svg {
+    transform: rotate(180deg);
+}
+
+.outline-button svg {
+    transition: transform 0.15s ease;
+}
+
+.posts-button:hover {
+    background: #f2f2f2;
+}
+
+.editor {
+    max-width: 720px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.feature-image {
+    display: flex;
+
+    font-family: Inter, system-ui, sans-serif;
+
+    color: #999;
+    font-size: 14px;
+}
+
+.feature-image:hover {
+    color: #666;
+}
+
+.title {
+    font-family: Inter, system-ui, sans-serif;
+    font-size: 44px;
+    font-weight: 750;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+.content {
+    font-family: "Source Serif 4", Georgia, serif;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #222;
+}
+
+.content h2 {
+    font-family: Inter, system-ui, sans-serif;
+    margin-top: 36px;
+    font-size: 26px;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 40px;
+
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.outline {
+    font-family: Inter, system-ui, sans-serif;
+    font-size: 13px;
+    color: #666;
+    margin: 40px auto;
+    padding: 0px 24px;
+    width: 220px;
+    transition: width .2s ease;
+    position: sticky;
+    top: 80px;
+    height: fit-content;
+}
+
+.outline-title {
+    font-size: 11px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: #999;
+}
+
+.outline nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.outline a {
+    text-decoration: none;
+    color: #666;
+}
+
+.outline a:hover {
+    color: #666;
+}
+
+.outline .sub {
+    margin-left: 12px;
+    color: #999;
+}
+
+.hidden {
+    display: none;
+}
+
+body {
+    min-width: 640px;
+}
